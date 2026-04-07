@@ -2,5 +2,5 @@
 2. Demander la couleur du feu
 3. couleurDuFeu <- couleur du feu
 4. SI couleurDuFeu == 'Rouge' afficher 'Stop'
-5. SINON SI couleurDuFeu == 'Orange' afficher 'Ralentir"
-6. SINON afficher 'Avancer'
+5. SINON SI couleurDuFeu == 'Orange' afficher 'Ralentir'
+6. SINON SI couleurDuFeu == 'Vert 'afficher 'Avancer'

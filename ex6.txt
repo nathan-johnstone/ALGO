@@ -5,4 +5,4 @@
 
 5. SI note >= 10 ET note < 12 afficher 'Passable'
 6. SINON SI note >= 12 ET note < 14 afficher 'Bien'
-7. SINON afficher 'Très bien'
+7. SINON SI note >= 14 afficher 'Très bien'
