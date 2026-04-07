@@ -1,0 +1,10 @@
+1. Créer la variable prenom
+2. Créer la variable age
+3. Créer la variable statutDeConnexion
+4. Demander le prénom
+5. prenom <- prénom
+6. Demander l'age
+7. age <- age
+8. Demander le statut de connexion
+9. statutDeConnexion <- statut de connexion
+10. Afficher prenom, age, statutDeConnexion
