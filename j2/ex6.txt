@@ -1,0 +1,9 @@
+tableau <- [11, 15, 9, 16, 14]
+somme <- 0
+POUR i de 0 à taille de tableau -1
+    somme <- somme + index i de tableau
+FIN POUR
+taille <- taille de tableau - 1
+moyenne <- somme / taille
+
+AFFICHER "La moyenne est de : " moyenne
