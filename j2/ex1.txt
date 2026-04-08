@@ -1,0 +1,7 @@
+1. POUR i de 1 à 20
+2.      Créer la variable a
+3.      a <- i % 2
+4.      SI a = 0
+5.           Afficher i
+6.      FIN SI
+7. FIN POUR

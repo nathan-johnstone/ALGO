@@ -1,0 +1,10 @@
+1. Créer la variable esssai
+2. essai <- 0
+3. TANT QUE essai >= 1
+4.     Afficher 'Le nombre d\'essais est : 'essai
+5.     SI essai < 3
+6.          Demander les informations de connexion
+7.     SINON
+8.          Afficher 'Nombre maximal d\'essais atteint'
+9.     FIN SI
+10. FIN TANT QUE
