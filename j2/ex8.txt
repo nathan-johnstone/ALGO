@@ -8,4 +8,4 @@ AFFICHER "Le total est : " total
 OU
 
 tableau <- ["Alfa", "Bravo", "Charlie", "Delta", "Echo"]
-afficher "Le total est : " taille de tableau - 1
+afficher "Le total est : " taille de tableau
