@@ -1,0 +1,12 @@
+FONCTION calculerTVA(prixHT, tauxTVA)
+    montant <- prixHT * tauxTVA / 100
+    RETOURNER montant
+FIN
+
+DEMANDER un prix HT
+prixHT <- prix HT
+DEMANDER un taux de TVA (en %)
+tauxTVA <- taux de TVA
+
+prixTTC = prixHT + calculerTVA(prixHT, tauxTVA)
+AFFICHER 'Le prix TTC est : ' + prixTTC
