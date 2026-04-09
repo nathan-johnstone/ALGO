@@ -1,0 +1,7 @@
+note <- 8
+
+SI note >= 10 // remplacement du texte plus grabnd ou égal par '>='
+  AFFICHER "Admis"
+SINON SI note < 10 // ajout de la condition pour afficher 'non admis'
+  AFFICHER "Non admis"
+FIN SI

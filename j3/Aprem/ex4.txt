@@ -1,0 +1,11 @@
+notes <- []
+somme <- 0
+
+SI longeur de notes > 0 // Ajout d'une condition pour exécuter le code uniquement si le tableau contient des valeurs
+  POUR note de 0 à longeur de notes - 1 // correction syntaxe pour récuperer les valeurs du tableau
+    somme <- somme + notes[note] //correction syntaxe pour récupérer la valeur dans le tableau
+  FIN POUR
+  moyenne <- somme / longeur de notes //corerction syntaxe pour récupérer la longeur de notes
+  AFFICHER moyenne
+SINON AFFICHER 'Il doit avoir au moins 1 note' // message d'erreur
+FIN SI

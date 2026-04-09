@@ -1,0 +1,8 @@
+age <- 16
+
+SI age >= 18 //ajout de '>=' pour que 18 ans soit compris dans 'majeur'
+  AFFICHER "Majeur"
+SINON
+  AFFICHER "Mineur"
+FIN SI
+

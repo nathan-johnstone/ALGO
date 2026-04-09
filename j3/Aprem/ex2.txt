@@ -1,0 +1,10 @@
+notes <- [10, 12 , 14]
+somme <- 0
+
+POUR note de 0 à taille de notes - 1 // syntaxe correcte pour récupérer les valuers du tableau
+  somme <- somme + notes[note] // ajout de note à somme et selection correcte des valeurs du tableau
+FIN POUR
+
+moyenne <- somme / 3
+
+AFFICHER moyenne
