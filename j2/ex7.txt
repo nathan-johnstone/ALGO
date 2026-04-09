@@ -4,9 +4,9 @@ mini <- index 0 de tableau
 maxi <- index 0 de tableau
 
 POUR i de 0 à taille de tableau - 1
-    SI index i de tableau > mini
+    SI index i de tableau < mini
         mini <- index i du tableau
-    SINON SI index i de tableau < maxi
+    SINON SI index i de tableau > maxi
         maxi <- index i de tableau
     FIN SI
 FIN POUR

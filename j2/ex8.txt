@@ -1,4 +1,4 @@
-tableau <- ["Alfa", "Bravo", "Charlie", "Delta", "Echo"]
+tableau <- ["Alpha", "Bravo", "Charlie", "Delta", "Echo"]
 total <- 0
 POUR i de 0 à taille de tableau - 1
     total <- total + 1
@@ -7,5 +7,5 @@ AFFICHER "Le total est : " total
 
 OU
 
-tableau <- ["Alfa", "Bravo", "Charlie", "Delta", "Echo"]
+tableau <- ["Alpha", "Bravo", "Charlie", "Delta", "Echo"]
 afficher "Le total est : " taille de tableau
