@@ -1,0 +1,37 @@
+// Exercice 3 : Chercher dans une grille
+//Consigne :
+//Créer un tableau 4×4 de nombres.
+
+tab <- [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+    [13,14,15,16]
+]
+
+//Chercher si un nombre spécifique existe dans la grille
+
+FONCTION recherche(tableau, recherche)
+    POUR i de 0 à taille tableau - 1
+        POUR j de 0 à taille tableau[i] - 1
+            SI tableau[i][j] == recherche
+                RETOURNER [i,j]
+            FIN SI
+        FIN POUR
+    FIN POUR
+    RETOURNER faux
+FIN
+
+Demander un nombre à rechercher
+nombreRecherche <- nombre entrée
+
+//Si oui, afficher sa position (ligne, colonne)
+//Si non, afficher "Nombre non trouvé"
+
+rep <- recherche(tab, nombreRecherche)
+
+SI rep == faux
+    AFFICHER "Nombre non trouvé"
+SINON
+    AFFICHER "Le nombre se trouve ligne " + rep[0] + "et colonne " + rep[1]
+FIN SI
