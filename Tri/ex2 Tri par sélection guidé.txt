@@ -1,0 +1,106 @@
+// Exercice 2 : Tri par sélection guidé,
+// Soit le tableau : [29, 10, 14, 37, 13, 25]
+// Appliquer l'algorithme du tri par sélection,
+// À chaque passage, identifier le minimum trouvé,
+// Indiquer l'échange effectué,
+// Tracer l'état du tableau après chaque passage
+
+FONCTION triParSelection(tableau)
+	n ← longueur(tableau)
+	POUR i de 0 à n – 2 // Trouver l'index du minimum dans le reste du tableau
+		indexMin ← i
+		POUR j de i + 1 à n – 1
+			SI tableau[j] < tableau[indexMin]
+				indexMin ← j
+			FIN SI
+		FIN POUR // Échanger l'élément minimum avec l'élément en position i
+		SI indexMin !== i
+			temp ← tableau[i]
+			tableau[i] ← tableau[indexMin]
+			tableau[indexMin] ← temp
+		FIN SI
+	FIN POUR
+FIN
+
+DEBUT DU TRI
+
+[29, 10, 14, 37, 13, 25]
+n = 6
+
+1e tour i :
+i = 0 // max 4
+
+    1e tour j :
+    j = 1 // max 5
+    indexMin = 1
+
+    2e tour j :
+    j = 2
+    indexMin = 1
+
+    3e tour j :
+    j = 3
+    indexMin = 1
+
+    4e tour j :
+    j = 4
+    indexMin = 1
+
+    5e tour j :
+    j = 5
+    indexMin = 1
+
+[10, 29, 14, 37, 13, 25] // 29 échangé avec 10
+
+2e tour i :
+i = 1
+
+    1e tour j :
+    j = 2
+    indexMin = 2
+
+    2e tour j :
+    j = 3
+    indexMin = 2
+
+    3e tour j :
+    j = 4
+    indexMin = 4
+
+    4e tour j :
+    j = 5
+    indexMin = 4
+
+[10, 13, 14, 37, 29, 25] // 29 échangé avec 13
+
+3e tour i :
+i = 2
+
+    1e tour j :
+    j = 3
+    indexMin = 2
+
+    2e tour j :
+    j = 4
+    indexMin = 2
+
+    3e tour j :
+    j = 5
+    indexMin = 2
+
+[10, 13, 14, 37, 29, 25] // inchangé
+
+4e tour i :
+i = 3
+
+    1e tour j :
+    j = 4
+    indexMin = 4
+
+    2e tour j :
+    j = 5
+    indexMin = 5
+
+[10, 13, 14, 25, 29, 37] // 37 échangé avec 25
+
+FIN DU TRI
