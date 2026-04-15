@@ -1,0 +1,22 @@
+Exercice 1 : Algorithme volontairement faux à corriger
+Algorithme donné
+age 16
+SI > 18
+AFFICHER
+SINON
+AFFICHER
+FIN SI
+"Majeur"
+"Mineur"
+Travail demandé
+- Identifier l'erreur logique
+- Corriger l'algorithme
+
+
+age <- 16
+
+SI age >= 18 //ajout de '>=' pour que 18 ans soit compris dans 'majeur'
+  AFFICHER "Majeur"
+SINON
+  AFFICHER "Mineur"
+FIN SI

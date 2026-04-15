@@ -1,8 +1,0 @@
-1. Créer variable note
-2. Demander la note
-3. note <- note
-4. SI note > 9 afficher 'admis' SINON afficher 'refusée'
-
-5. SI note > 9 ET note < 12 afficher 'Passable'
-6. SINON SI note > 11 ET note < 14 afficher 'Bien'
-7. SINON SI note > 13 afficher 'Très bien'

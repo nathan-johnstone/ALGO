@@ -1,0 +1,26 @@
+Exercice 1 : Créer une fonction de calcul de TVA
+1.
+2.
+Créer une fonction scalculerTVA(prixHT, tauxTVA) qui :
+- Prend en paramètre un prix HT et un taux de TVA
+- Calcule le montant de la TVA
+- Retourne ce montant
+Ensuite, écrire un algorithme principal qui :
+- Demande un prix HT
+- Demande un taux de TVA
+Appelle la fonction
+- Affiche le prix TTC (prix HT + TVA)
+
+
+FONCTION calculerTVA(prixHT, tauxTVA)
+    montant <- prixHT * tauxTVA / 100
+    RETOURNER montant
+FIN
+
+DEMANDER un prix HT
+prixHT <- prix HT
+DEMANDER un taux de TVA (en %)
+tauxTVA <- taux de TVA
+
+prixTTC = prixHT + calculerTVA(prixHT, tauxTVA)
+AFFICHER 'Le prix TTC est : ' + prixTTC

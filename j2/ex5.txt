@@ -1,4 +1,0 @@
-tableau <- ["Alfa", "Bravo", "Charlie", "Delta"]
-POUR i de 0 à taille de tableau - 1
-    AFFICHER index i de tableau
-FIN POUR

@@ -1,0 +1,12 @@
+Exercice 1 : Vérifier si une personne est majeure
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : âge
+Tester si la personne est majeure
+Afficher un message adapté selon qu'elle est majeur ou non
+
+
+1. Créer la variable age
+2. Demander la variable age
+3. age <- age
+4. SI age > 17 afficher 'majeur' SINON afficher 'erreur'

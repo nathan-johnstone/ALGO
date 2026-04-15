@@ -1,0 +1,83 @@
+Exercice 1 : Tri à bulles sur petit tableau
+Soit le tableau : [5, 1, 4, 2, 8]
+Appliquer l'algorithme du tri à bulles manuellement
+Tracer chaque passage complet
+Indiquer tous les échanges effectués
+
+
+FONCTION triABulles(tableau)
+	n ← longueur(tableau)
+	POUR i de 0 à n - 2 // Nombre de passages
+		POUR j de 0 à n - 2 - i // Parcours du tableau
+			SI tableau[j] > tableau[j + 1] // Échanger les éléments
+			temp ← tableau[j]
+			tableau[j] ← tableau[j + 1]
+			tableau[j + 1] ← temp
+			FIN SI
+		FIN POUR
+	FIN POUR
+FIN FONCTION
+
+// n=5
+
+1e tour :
+i=0 // max 3
+j=0 // max 3
+
+[1, 5, 4, 2, 8] // 1 et 5 échangés
+
+2e tour :
+i=0
+j=1
+
+[1, 4, 5, 2, 8] // 5 et 4 échangés
+
+3e tour :
+i=0
+j=2
+
+[1, 4, 2, 5, 8] // 5 et 2 échangés
+
+4e tour :
+i=0
+j=3
+
+[1, 4, 2, 5, 8] // inchangé
+
+5e tour :
+i=1
+j=0 // max 2
+
+[1, 4, 2, 5, 8] // inchangé
+
+6e tour :
+i=1
+j=1
+
+[1, 2, 4, 5, 8] // 4 et 2 échangé
+
+7e tour :
+i=1
+j=2
+
+[1, 2, 4, 5, 8] // inchangé
+
+8e tour :
+i=2
+j=0 // max 1
+
+[1, 2, 4, 5, 8] // inchangé
+
+9e tour :
+i=2
+j=1
+
+[1, 2, 4, 5, 8] // inchangé
+
+10e tour :
+i=3
+j=0 // max 0
+
+[1, 2, 4, 5, 8] // inchangé
+
+FIN POUR

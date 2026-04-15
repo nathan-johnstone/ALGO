@@ -1,3 +1,0 @@
-1. POUR i de 10 à 0
-2.      Afficher i
-3. FIN POUR

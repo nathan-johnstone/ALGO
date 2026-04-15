@@ -1,0 +1,8 @@
+Exercice 2 : Compter à rebours
+Consigne :
+Afficher les nombres de 10 à 0
+
+
+1. POUR i de 10 à 0
+2.      Afficher i
+3. FIN POUR

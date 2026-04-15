@@ -1,0 +1,18 @@
+Exercice 4 : Compter le nombre d’éléments
+Consigne :
+Créer un tableau
+Compter le nombre d’éléments
+Afficher le total
+
+
+tableau <- ["Alpha", "Bravo", "Charlie", "Delta", "Echo"]
+total <- 0
+POUR i de 0 à taille de tableau - 1
+    total <- total + 1
+FIN POUR
+AFFICHER "Le total est : " total
+
+OU
+
+tableau <- ["Alpha", "Bravo", "Charlie", "Delta", "Echo"]
+afficher "Le total est : " taille de tableau

@@ -1,0 +1,18 @@
+Exercice 1 : Calculer l’âge à partir de l’année de naissance
+Ecrire l'algorithme suivant en pseudo-code :
+
+Stocker l’année de naissance
+Stocker l’année actuelle
+Calculer l’âge
+Afficher le résultat
+
+
+1. créer variable anneeDeNaissance
+2. créer variable anneeActuelle
+3. créer avriable age
+4. Demander année de naissance
+5. anneeDeNaissance <- année de naissance
+6. Demander année actuelle
+7. anneeActuelle <- année actuelle
+8. age <- anneeActuelle - anneeDeNaissance
+9. Afficher age

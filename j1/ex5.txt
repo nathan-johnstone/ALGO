@@ -1,4 +1,0 @@
-1. Créer variable motDePasseSaisi
-2. Demander le mot de passe
-3. motDePasseSaisi <- mot de passe
-4. SI motDePasseSaisi == motDePasse ET motDePasseSaisi > 11 caractères afficher "succès" SINON afficher "erreur"

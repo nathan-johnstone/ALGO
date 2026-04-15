@@ -1,4 +1,0 @@
-1. Créer la variable age
-2. Demander la variable age
-3. age <- age
-4. SI age > 17 afficher 'majeur' SINON afficher 'erreur'

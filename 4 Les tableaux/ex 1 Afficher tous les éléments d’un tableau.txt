@@ -1,0 +1,10 @@
+Exercice 1 : Afficher tous les éléments d’un tableau
+Consigne :
+Créer un tableau de valeurs
+Afficher chaque élément un par un
+
+
+tableau <- ["Alfa", "Bravo", "Charlie", "Delta"]
+POUR i de 0 à taille de tableau - 1
+    AFFICHER index i de tableau
+FIN POUR

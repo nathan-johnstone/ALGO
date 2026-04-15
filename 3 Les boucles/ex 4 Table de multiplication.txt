@@ -1,0 +1,14 @@
+Exercice 4 : Table de multiplication
+Consigne :
+Demander un nombre
+Afficher sa table de multiplication de 1 à 10
+
+
+1. Créer la variable a
+2. Demander un nombre
+3. a <- nombre
+4. POUR i de 1 à 10
+5.      Créer la variable z
+6.      z <- a * i
+7.      AFFICHER a "*" i '=' z
+8. FIN POUR

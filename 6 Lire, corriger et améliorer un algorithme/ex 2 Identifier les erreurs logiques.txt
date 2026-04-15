@@ -1,0 +1,24 @@
+Exercice 2 : Identifier les erreurs logiques
+donné
+notes •- [ 1e. 12, 141
+somme e
+POUR chaque note dans notes
+Somme note
+FIN POUR
+moyenne Somme / 3
+AFFICHER moyenne
+Travail demandé
+Expliquer pourquoi la moyenne est incorrecte
+Corriger l'algorithme
+
+
+notes <- [10, 12 , 14]
+somme <- 0
+
+POUR note de 0 à taille de notes - 1 // syntaxe correcte pour récupérer les valuers du tableau
+  somme <- somme + notes[note] // ajout de note à somme et selection correcte des valeurs du tableau
+FIN POUR
+
+moyenne <- somme / 3
+
+AFFICHER moyenne

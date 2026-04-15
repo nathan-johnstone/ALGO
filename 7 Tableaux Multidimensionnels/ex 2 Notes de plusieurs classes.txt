@@ -1,0 +1,42 @@
+Exercice 2 : Notes de plusieurs classes
+Créer un tableau représentant les notes de 3 classes avec 5 élèves chacune.
+Calculer la moyenne d'une classe spécifique
+Calculer la moyenne générale de toutes les classes
+
+
+notes <- [
+    [12, 15, 10, 14, 18],
+    [10, 8, 12, 15, 13],
+    [5, 12, 17, 13, 14]
+]
+
+//Calculer la moyenne d'une classe spécifique
+
+FONCTION moyenneTab(tab)
+    moyenne <- 0
+    POUR i de 0 à taille tab - 1
+        moyenne <- moyenne + tab[i]
+    FIN POUR
+    moyenne <- moyenne / taille tab
+    RETOURNER moyenne
+FIN
+
+POUR i de 0 à taille notes - 1
+    AFFICHER moyenneTab(notes[i])
+FIN POUR
+
+//Calculer la moyenne générale de toutes les classes
+
+FONCTION moyenneTabs(tab)
+    nbNotes <- 0
+    somme <- 0
+    POUR i de 0 à taille tab - 1
+        nbNotes <- nbNotes + taille tab[i]
+        POUR j de 0 à taille tab[i] - 1
+            somme <- somme + tab[i][j]
+        FIN POUR
+    FIN POUR
+    RETOURNER somme / nbNotes
+FIN
+
+AFFICHER "La moyenne générale est : "+moyenneTabs(notes)

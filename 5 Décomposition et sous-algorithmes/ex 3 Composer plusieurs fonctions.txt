@@ -1,0 +1,45 @@
+Exercice 3 : Composer plusieurs fonctions
+1. Créer deux fonctions :
+- 'calculerMoyenne(note1, note2, note3)S qui retourne la moyenne de 3 notes
+- 'attribuerMention(moyenne)' qui retourne une mention selon la moyenne :
++ moyenne >= 16 : "Très bien"
++ moyenne >= 14 : "Bien"
++ moyenne >= 12 : "Assez bien"
++ moyenne 10 : "Passable"
++ moyenne < IO : "Insuffisant"
+2. Ensuite, écrire un algorithme principal qui :
+- Demande 3 notes
+- Calcule la moyenne avec la première fonction
+- Obtient la mention avec la deuxième fonction
+- Affiche moyenne et mention
+
+
+FONCTION calculerMoyenne(note1, note2, note3)
+    RETOURNER note1 + note2 + note3 / 3
+FIN
+
+FONCTION attribuerMention(moyenne)
+    SI moyenne >= 16
+        RETOURNER 'Très bien'
+    SINON SI moyenne >= 14
+        RETOURNER 'Bien'
+    SINON SI moyenne >= 12
+        RETOURNER 'Assez bien'
+    SINON SI moyenne >= 10
+        RETOURNER 'Passable'
+    SINON SI moyenne < 10
+        RETOURNER 'Insuffisant'
+    FIN SI
+FIN
+
+Demander 1e note
+x <- 1e note
+Demander 2e note
+y <- 2e note
+Demander 3e note
+z <- 3e note
+
+moyenne <- calculerMoyenne(x, y, z)
+mention <- attribuerMention(moyenne)
+
+AFFICHER 'Moyenne : ' + moyenne + '</br>Mention : ' + mention

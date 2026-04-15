@@ -1,0 +1,16 @@
+Exercice 4 : Feu tricolore
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : couleur du feu
+Afficher le comportement à adopter :
+Rouge → Stop
+Orange → Ralentir
+Vert → Avancer
+
+
+1. Créer varaiable couleurDuFeu
+2. Demander la couleur du feu
+3. couleurDuFeu <- couleur du feu
+4. SI couleurDuFeu == 'Rouge' afficher 'Stop'
+5. SINON SI couleurDuFeu == 'Orange' afficher 'Ralentir'
+6. SINON SI couleurDuFeu == 'Vert 'afficher 'Avancer'

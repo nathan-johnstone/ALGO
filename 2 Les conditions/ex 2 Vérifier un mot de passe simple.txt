@@ -1,0 +1,15 @@
+Exercice 2 : Vérifier un mot de passe simple
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : mot de passe saisi
+Comparer avec un mot de passe attendu
+Afficher succès ou erreur
+
+Variante :
+Ajouter une condition sur la longueur du mot de passe (au moins 12 caractères)
+
+
+1. Créer variable motDePasseSaisi
+2. Demander le mot de passe
+3. motDePasseSaisi <- mot de passe
+4. SI motDePasseSaisi == motDePasse ET motDePasseSaisi > 11 caractères afficher "succès" SINON afficher "erreur"

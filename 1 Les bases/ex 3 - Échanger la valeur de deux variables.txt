@@ -1,0 +1,18 @@
+Exercice 3 : Échanger la valeur de deux variables
+Ecrire un algorithme en pseudo-code pour :
+
+Créer deux variables avec des valeurs différentes
+Échanger leurs valeurs sans les perdre
+
+
+1. Créer la variable valeurUn
+2. Créer la variable valeurDeux
+3. Créer la variable valeurTrois
+4. Demander la 1e valeur
+5. valeurUn <- 1e valeur
+6. Demander la 2e valeur
+7. valeurDeux <- 2e valeur
+
+8. valeurTroix <- valeurUn
+9. valeurUn <- valeurDeux
+10. valeurDeux <- valeurTroix

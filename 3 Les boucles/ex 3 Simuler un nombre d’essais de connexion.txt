@@ -1,0 +1,17 @@
+Exercice 3 : Simuler un nombre d’essais de connexion
+Consigne :
+L’utilisateur a 3 essais maximum
+Afficher le numéro de l’essai
+Arrêter après le dernier essai
+
+
+1. Créer la variable esssai
+2. essai <- 1
+3. TANT QUE essai >= 1
+4.     Afficher 'Le nombre d\'essais est : 'essai
+5.     SI essai <= 3
+6.          Demander les informations de connexion
+7.     SINON
+8.          Afficher 'Nombre maximal d\'essais atteint'
+9.     FIN SI
+10. FIN TANT QUE
