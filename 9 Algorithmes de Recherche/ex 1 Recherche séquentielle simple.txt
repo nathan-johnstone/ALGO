@@ -1,0 +1,35 @@
+Exercice 1 : Recherche séquentielle simple
+Écrire un algorithme qui :
+Crée un tableau de prénoms
+Demande un prénom à rechercher
+Utilise la recherche séquentielle pour le trouver
+Affiche sa position ou "non trouvé"
+
+
+// FONCTIONS
+
+FONCTION rechercherElement(tableau, valeur)
+	POUR i de 0 à longeur(tableau) – 1
+		SI tableau[i] = valeur
+			RETOURNER i
+		FIN SI
+	FIN POUR
+	RETOURNER faux
+FIN FONCTION
+
+
+// ALGO PRINCIPALE
+
+prenoms <- ["Golf", "Charlie", "India", "Echo", "Bravo", "Foxtrot", "Alpha", "Hotel", "Lima", "Juliet", "Delta",]
+
+DEMANDER un prenom à rechercher
+recherche <- prénom entré
+
+SI recherche !== null
+    resultat <- rechercherElement(prenoms, recherche)
+    SI resultat == faux
+        AFFICHER "non trouvé"
+    SINON
+        AFFICHER "Trouvé à l'index " + resultat
+    FIN SI
+FIN SI

@@ -1,0 +1,92 @@
+Exercice 3 : Recherche dichotomique guidée
+Soit le tableau trié : [2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+Écrire l'algorithme de recherche dichotomique complet
+Tracer l'exécution pour rechercher le nombre 23
+Indiquer les valeurs de debut, fin et milieu à chaque étape
++ Effectuer le traçage pour la recherche du nombre 5
+
+
+// FONCTIONS
+
+FONCTION rechercheDichotomique(tableau, element)
+	debut ← 0
+	fin ← longueur(tableau) – 1
+		TANT QUE debut <= fin
+			milieu ← arrondir((debut + fin) / 2)
+			SI tableau[milieu] = element
+				RETOURNER milieu
+			SINON SI tableau[milieu] < element
+				debut ← milieu + 1
+			SINON
+				fin ← milieu - 1
+			FIN SI
+		FIN TANT QUE
+	RETOURNER -1
+FIN
+
+
+// ALGO PRINCIPAL pour 23
+
+tableau <- [2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+recherche <- 23
+
+SI recherche >= 0
+    resultat <- rechercheDichotomique(tableau, recherche)
+    SI resultat == -1
+        AFFICHER "Non trouvé"
+    SINON
+        AFFICHER "Trouvé à l'index " + resultat
+    FIN SI
+FIN SI
+
+
+// TRACAGE
+
+[2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+
+debut = 2 // index 0
+fin = 78 // index 10
+
+1e tour :
+milieu = 23 // index 5
+tableau[milieu] = element // donc trouvé !
+
+
+// ALGO PRINCIPAL pour 5
+
+tableau <- [2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+recherche <- 5
+
+SI recherche >= 0
+    tableau <- triParSelection(tableau)
+    resultat <- rechercheDichotomique(tableau, recherche)
+    SI resultat == -1
+        AFFICHER "Non trouvé"
+    SINON
+        AFFICHER "Trouvé à l'index " + resultat
+    FIN SI
+FIN SI
+
+
+// TRACAGE
+
+[2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+
+debut = 2 // index 0
+fin = 78 // index 10
+
+1e tour :
+milieu = 23 // index 5
+tableau[milieu] > element
+debut = 2 // index 0
+fin = 16 // index 4
+
+2e tour :
+milieu = 8 // index 2
+tableau[milieu] > element
+debut = 2 // index 0
+fin = 5 // index 1
+
+3e tour :
+milieu = 5 // index 1
+tableau[milieu] == element // donc trouvé !

@@ -1,0 +1,30 @@
+Exercice 2 : Compter les occurrences
+Écrire un algorithme qui :
+Crée un tableau de nombres (avec des doublons possibles)
+Demande un nombre à rechercher
+Compte combien de fois ce nombre apparaît
+Affiche le résultat
+
+
+// FONCTIONS
+
+FONCTION compterElement(tableau, valeur)
+    compteur <- 0
+	POUR i de 0 à longeur(tableau) – 1
+		SI tableau[i] = valeur
+			compteur <- compteur + 1
+		FIN SI
+	FIN POUR
+	RETOURNER compteur
+FIN
+
+// ALGO PRINCIPALE
+
+nombres <- [12, 27, 5, 27, 15, 6, 4, 15, 12, 18, 24, 16, 12, 11, 8, 10]
+
+DEMANDER nombre à chercher
+recherche <- nombre entré
+
+SI recherche est un nombre entier ET recherche >= 0
+    AFFICHER "Le nombre apparait " + compterElement(nombres, recherche) + "fois"
+FIN SI
