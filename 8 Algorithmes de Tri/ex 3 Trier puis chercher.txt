@@ -1,0 +1,75 @@
+Exercice 3 : Trier puis chercher
+Soit le tableau : `[45, 12, 89, 23, 67, 34, 5, 78]`
+1. Trier ce tableau en utilisant le tri à bulles OU le tri par sélection (au choix)
+2. Une fois trié, utiliser la recherche dichotomique pour trouver le nombre 67
+3. Tracer l'exécution de la recherche dichotomique
+
+
+FONCTION triParSelection(tableau)
+	n ← longueur(tableau)
+	POUR i de 0 à n – 2
+		indexMin ← i
+		POUR j de i + 1 à n – 1
+			SI tableau[j] < tableau[indexMin]
+				indexMin ← j
+			FIN SI
+		FIN POUR
+		SI indexMin !== i
+			temp ← tableau[i]
+			tableau[i] ← tableau[indexMin]
+			tableau[indexMin] ← temp
+		FIN SI
+	FIN POUR
+FIN
+
+FONCTION rechercheDichotomique(tableau, element)
+	debut ← 0
+	fin ← longueur(tableau) – 1
+		TANT QUE debut <= fin
+			milieu ← arrondir((debut + fin) / 2)
+			SI tableau[milieu] = element
+				RETOURNER milieu
+			SINON SI tableau[milieu] < element
+				debut ← milieu + 1
+			SINON
+				fin ← milieu - 1
+			FIN SI
+		FIN TANT QUE
+	RETOURNER -1
+FIN
+
+// ALGO PRINCIPALE
+
+tableau <- [45, 12, 89, 23, 67, 34, 5, 78]
+recherche <- 67
+
+tableau <- triParSelection(tableau) // Après tri : [5, 12, 23, 34, 45, 67, 78, 89]
+
+resultat <- rechercheDichotomique(tableau, recherche)
+SI resultat < 0
+    AFFICHER "Introuvable"
+SINON
+    AFFICHER "Trouvé à l\'emplacement : " + resultat
+
+
+// Traçage de la recherche Dichoromique
+
+debut = 0
+fin = 7
+
+1e boucle :
+    milieu = 4
+    45 < element
+    // donc debut ← milieu + 1
+    début = 5
+
+2e boucle :
+    milieu = 6
+    78 > element
+    // donc fin ← milieu - 1
+    fin = 5
+
+3e boucle :
+    milieu = 5
+    67 = élément
+    // donc RETOURNER milieu
