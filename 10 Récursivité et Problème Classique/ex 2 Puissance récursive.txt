@@ -1,0 +1,38 @@
+Exercice 2 : Puissance récursive
+Écrire une fonction récursive puissance(x, n) qui calcule x^n.
+
+Exemple : puissance(2, 4) = 2^4 = 2 × 2 × 2 × 2 = 16
+
+Questions :
+Quel est le cas de base ? (rappel : x^0 = 1)
+Quelle est la relation récursive ? (x^n = x × x^(n-1))
+Écrire l'algorithme complet
+Tracer l'exécution pour puissance(2, 4)
+
+
+FONCTION puissance(x, n)
+    SI n == 0
+        RENVOYER 1 // CAS DE BASE
+    FIN SI
+    RENVOYER x * puissance(x, n - 1) // CAS RECURSIF
+FIN
+
+// TRACAGE
+
+puissance(2, 4)
+4 ≠ 0
+    puissance(2,3)
+    3 ≠ 0
+        puissance(2, 2)
+        2 ≠ 0
+            puissance(2, 1)
+            1 ≠ 0
+                puissance(2, 0)
+                0 = 0
+                RETOURNER 1
+            RETOURNER 2 * 1 = 2
+        RETOURNER 2 * 2 = 4
+    RETOURNER 2 * 4 = 8
+RETOURNER 2 * 8 = 16
+
+POUR x = 2 et n = 4, puissance(x, n) = 16
